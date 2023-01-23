@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Raleway', sans-serif;
+    
+}
+div{
+    /* border: 1px black solid; */
+}
+
+.mainContain{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.carousel, .button {
+    display: flex;
+    color: rgb(138, 138, 138);
+    font-size: 24px;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+}
+
+.button{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button:hover {
+    font-size: 32px;
+}
+
+/* .backward {
+    justify-self: start;
+}
+
+.forward {
+    align-self: end;
+    justify-self: end;
+} */
+
+.imageWindow {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.slidesContainer {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 0px;
+    /* background: linear-gradient(90deg, aqua, white, yellow, green,  aqua, white, yellow, green); */
+    width: 960px;
+    height: 100px;
+}
+
+.image, .image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgb(187, 102, 102), rgb(34, 34, 113));
+    color: white;
+}
+
+.image2 {
+    background: linear-gradient(135deg, rgb(245, 175, 83), rgb(27, 139, 122));
+}
+
+.circleContainer {
+    display: flex;
+    gap: 8px;
+    height: 20px;
+}
+
+.circle:hover{
+    width: 12px;
+    height: 12px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(138, 138, 138);
+}
+
+.button, .circle{
+    cursor: pointer;
+}
